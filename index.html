@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- metadatos -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titulo-ventana -->
+    <title>Formulario de Inscripción al Gimnasio</title>
+    <!-- ruta hoja de estilos  -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@1,200&family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- contenedor principal -->
+    <main class="main-container">
+        <!-- contenedor del titulo y descripción -->
+        <div class="title-container">
+            <!-- titulo principal -->
+            <h1 class="main-title">Únete a la transformación y descubre una  mejor versión de tí</h1>
+            <!-- Descripción principal -->
+            <p class="main-description">Inscríbete en nuestro gimnasio y transforma tu cuerpo y mente.</p>
+        </div>
+        <!-- contenedor del formulario -->
+        <div class="form-container">
+            <!-- formulario -->
+            <form class="survey-form">
+                <!-- grupo de elementos en el formulario -->
+                <div class="form-group">
+                    <!-- etiqueta de entrada de nombre -->
+                <label for="inicio-nombre" id="name-label" required>Nombre</label>
+                    <input type="text" id="inicio-nombre" name="name" placeholder="Introduzca su nombre" required>
+                </div>
+                <!-- grupo de entrada para correo electronico -->
+                <div class="form-group">
+                    <label id="email-label" for="email" required>Correo electrónico</label>
+                        <input type="email" id="email" name="correo" placeholder="Introduce tu correo electrónico" required>
+                </div>
+                <!-- grupo de entrada de edad -->
+                <div class="form-group">
+                    <label id="number-label" for="ageInput" required>Edad<span>(opcional)</span>
+                        <input class="input-age" type="number" id="ageInput" name="age" min="0" max="100" placeholder="Introduce tú edad" value="Introduce tú edad">
+                    </label>
+                </div>
+                <!-- grupo de entrada select -->
+                <div class="form-group">
+                    <!-- descripcion del select -->
+                <p class="select-description description-small">¿Qué opciones te gustaría incluir en tu membresía del gimnasio?</p>
+                <!-- select para opciones de menbresía -->
+                    <select class="select-membership" name="" id="dropdown">
+                        <!-- Descripción de la recomendación -->
+                        <option class="recommend-description" value="Seleccione el rol actual">Seleccione el rol actual</option>
+                        <option value="Paquete de membresía mensual">Paquete de membresía mensual</option>
+                        <option value="Plan de entrenamiento personalizado">Plan de entrenamiento personalizado</option>
+                        <option value="Acceso ilimitado a todas las instalaciones">Acceso ilimitado a todas las instalaciones</option>
+                        <option value="Asesoramiento nutricional">Asesoramiento nutricional</option>
+                        <option value="Entrenamiento de fuerza y acondicionamiento físico">Entrenamiento de fuerza y acondicionamiento físico</option>
+                    </select>
+                </div>
+                <!-- grupo de radio botones -->
+                <div class="radio-group">
+                    <p class="grupo__description-radio description-small">¿Recomendarias nuestro gimnasio Fuerza Suprema a un amigo?</p>
+                        <div class="radio__grid">
+                            <label id="radio" for="radio" required>No estoy seguro</label>
+                            <input class="input__radio1 input__radio" type="radio" name="opciones" value="opcion1" checked>
+                            <label id="radio" for="radio" required>Tal vez</label>
+                            <input class="input__radio2 input__radio" type="radio" name="opciones" value="opcion2" checked>
+                            <label id="radio" for="radio" required>Definitivamente</label>
+                            <input class="input__radio3 input__radio" type="radio" name="opciones" value="opcion3" checked>
+                        </div>
+                </div>
+                <!-- grupo de checkbox actividades fisicas -->
+                <div class="checkbox-group">
+                    <p class="description__checkbox description-small">¿Qué tipo de actividades físicas te interesan más?</p>
+                        <div class="checkbox__grid">
+                            <label class="checkbox__label" for="cardio">Entrenamiento cardiovascular</label>
+                            <input class="input__checkbox1 input__checkbox" type="checkbox" id="cardio" name="exercise" value="cardio">
+                            <label class="checkbox__label" for="pesas">Levantamiento de pesas</label>
+                            <input class="input__checkbox2 input__checkbox" type="checkbox" id="pesas" name="exercise" value="actividad">
+                            <label class="checkbox__label" for="grupo">Clases de grupo (por ejemplo, Zumba, yoga, spinning)</label>
+                            <input class="input__checkbox3 input__checkbox" type="checkbox" id="grupo" name="exercise" value="grupo">
+                            <label class="checkbox__label" for="team">Deportes en equipo (por ejemplo, fútbol, baloncesto)</label>
+                            <input class="input__checkbox4 input__checkbox" type="checkbox" id="team" name="exercise" value="team">
+                        </div>
+                </div>
+                <!-- contenedor del texarea -->
+                <div class="textarea-container">
+                    <p class="description__textarea description-small">¿Algún comentario o sugerencia?</p>
+                    <!-- borde del text area -->
+                    <div class="textarea-border"><textarea name="comentario" id="comentario" cols="5" rows="5" placeholder="Escribe aquí tu comentario..."></textarea></div>
+                </div>
+                <!-- contenedor botón de envío -->
+                <div class="button__container">
+                    <button type="submit" id="submit">Enviar</button>
+                </div>|
+            </form>
+        </div>
+    </main>
+</body>
+</body>
+</html>

@@ -1,0 +1,303 @@
+/* variables */
+:root {
+    --background-main: linear-gradient( rgba(0, 0, 0, 0.8), rgba(180, 68, 68, 0.1)), url('../imagenes/gim.jpg') no-repeat center/cover;
+    --sombra-general: 0px 0px 8px #008;
+    --color-borde: 1px solid rgba(39, 69, 125, 0.5);
+}
+/* estilos globales */
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Contendor principal */
+.main-container {
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--background-main);
+}
+/* sección de título y descripción */
+.title-container {
+    width: 90%;    
+    min-width: 320px;
+    max-width: 900px;
+    text-align: center;
+}
+.main-title {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 60px;
+    display: block;
+}
+.main-description {
+    font-family: 'Poppins', sans-serif;
+    color: #ffe;
+    font-size: 2.2rem;
+    margin-top: 2rem;
+    margin-bottom: 40px;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+}
+
+/* Sección de formulario */
+.form-container {
+    width: 50%;
+    min-width: 320px;
+    max-width: 900px;
+    height: auto;
+    padding-bottom: 40px;
+}
+.survey-form {
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 6px #008,  0px -2px 6px #008;
+} 
+/* Grupo de campos */
+.form-group {
+    width: 100%;
+}
+.form-group label {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 8px;
+    color: #fff;
+}
+.form-group input, select {
+    width: 100%;
+    height: 38px;
+    padding: 6px 12px;
+    border: 1px solid #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    background-clip: padding-box;
+    font-family: inherit;
+    line-height: inherit;
+    margin-bottom: 20px;
+    outline: none;
+    box-shadow: var(--sombra-general);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-group input::placeholder {
+    color: #fff;
+    font-size: 1.5rem;
+}
+.form-group input:hover {
+    border: var(--color-borde);
+}
+.form-group input:active {
+    box-shadow: 0px 0px 4px #27457de6;
+}
+.select-description {
+    color: #fff;
+    display: block;
+}   
+.select-description, span {
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 8px;
+    color: #fff;
+}    
+.form-group span {
+    margin-left: 4px;
+    font-size: 1.5rem;
+    color: #ffe;
+}
+.select-membership {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+select:hover {
+    border: var(--color-borde);
+}
+select option:first-child {
+    background-color: #27457de6;
+}
+
+/* grupo de radio botones */
+.radio__grid {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(2, max-content);
+    gap: 10px;
+}
+.input__radio1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.input__radio2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.input__radio3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+/* termina grid radio */
+
+.radio-group label {
+    display: inline-block;
+    font-size: 1.8rem;
+    margin-right: 10px;
+    color: #fff;
+}
+.input__radio {
+    margin-right: 10px;
+    min-width: 15px;
+    min-height: 15px;
+}
+.grupo__description-radio {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.checkbox-group
+.description__checkbox,
+.grupo__description-radio,
+.description__textarea {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* inicio checkbox con grid */
+.checkbox__grid {
+    width: 100%;
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(2, max-content);
+    gap: 10px;
+}
+.input__checkbox1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.input__checkbox2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.input__checkbox3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.input__checkbox4 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+/* termina checkbox grid */
+
+
+.input__checkbox {
+    margin-right: 10px;
+    min-width: 15px;
+    min-height: 15px;
+}
+.checkbox__label {
+    width: 100%;
+    font-size: 1.8rem;
+    margin-bottom: 4px;    
+    color: #fff;
+}
+
+textarea {
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 8px #008;
+}
+.textarea-container {
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+.textarea-border {
+    height: 100px;
+}
+.textarea-border:hover {
+    border: 2px solid rgba(39, 69, 125, 0.9);
+}
+textarea::placeholder {
+    color: #000;
+    font-size: 1.7rem;
+}
+.button__container  button {
+    width: 100%;
+    height: 50px;
+    padding: 12px;
+    border-radius: 4px;
+    display: block;
+    border: 1px solid #fff;
+    background-color: var(--color-borde);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.8rem;
+    box-shadow: var(--sombra-general);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.button__container button:hover {
+    border: 1px solid rgba(39, 69, 125, 0.8);
+    transition: .4s button ease-in-out;
+} 
+
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .main-title {
+        font-size: 2.6rem;
+    }
+    .main-description {
+        font-size: 2.2rem;
+    }
+    .checkbox__label {
+        width: 100%;
+    }
+    .form-container {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 425px) {
+    .title-container {
+        width: 90%;
+    }
+    .main-title {
+        font-size: 2rem;
+    }
+    .main-description {
+        font-size: 1.6rem;
+    }
+    .form-container {
+        width: 90%;
+    }
+    .form-group label {
+        font-size: 1.6rem;
+    }
+    .radio-group label {
+        font-size: 1.5rem;
+    }
+    .description-small  {
+        font-size: 1.6rem;
+    }
+    .checkbox-group .description__checkbox {
+        font-size: 1.6rem;
+    }
+    .checkbox__label {
+        font-size: 1.5rem;
+        width: 60%;
+    }
+}
