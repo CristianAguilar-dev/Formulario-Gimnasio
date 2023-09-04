@@ -30,6 +30,8 @@ Este proyecto consiste en un formulario de inscripción al gimnasio "Fuerza Supr
 
 - [Vista previa del diseño](./Formulario-Gimn.png)
 
+- [Ver sitio en vivo](https://cristianaguilar-dev.github.io/Formulario-Gimnasio/)
+
 ## Contribución
 
 Este proyecto fue creado como parte de un desafío de FreeCodeCamp. Si deseas contribuir, ¡estaré encantado de revisar tus propuestas!
