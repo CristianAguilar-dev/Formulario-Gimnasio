@@ -272,7 +272,9 @@ textarea::placeholder {
     }
 }
 @media screen and (min-with: 579px) {
+    .checkbox__label {
         width: 80%;
+    }
 
 }
 @media screen and (max-width: 425px) {
