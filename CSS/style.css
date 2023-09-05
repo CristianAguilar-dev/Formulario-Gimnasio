@@ -207,7 +207,7 @@ select option:first-child {
     min-height: 15px;
 }
 .checkbox__label {
-    width: 100%;
+    width: 80%;
     font-size: 1.8rem;
     margin-bottom: 4px;    
     color: #fff;
@@ -270,6 +270,9 @@ textarea::placeholder {
     .form-container {
         width: 80%;
     }
+}
+@media screen and (min-with: 579px) {
+        width: 80%;
 }
 @media screen and (max-width: 425px) {
     .title-container {
